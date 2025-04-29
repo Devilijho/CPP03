@@ -31,8 +31,8 @@ class ClapTrap
 	public:
 		ClapTrap(std::string name);
 		~ClapTrap();
-		//copy Fixed::Fixed(const Fixed &fixed)
-		//assignment Fixed& Fixed::operator=(const Fixed &other)
+		ClapTrap(const ClapTrap &claptrap);
+		ClapTrap &operator=(const ClapTrap &other);
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
